@@ -18,8 +18,8 @@ public class SearchTest extends MainClass {
 
         SearchResultPage searchResultPage = searchPage.search(SEARCH_STRING);
 
-        Assert.assertTrue(searchResultPage.getFirstElemFromArticle().getText().contains(SEARCH_STRING));
-        searchResultPage.getFirstElemFromArticle().click();
+        Assert.assertTrue(searchResultPage.getFirstElemFromListing().getText().contains(SEARCH_STRING));
+        searchResultPage.getFirstElemFromListing().click();
     }
 
 }
