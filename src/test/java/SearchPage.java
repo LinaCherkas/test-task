@@ -8,13 +8,12 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class SearchPage {
     private final SelenideElement searchField = $x("//input[@type='text']");
+    private final Map<SelenideElement, String> googleButtonsMap = new HashMap<>();
 
     public SearchPage(String url) {
         Selenide.open(url);
         setGoogleButtonsMap();
     }
-
-    private final Map<SelenideElement, String> googleButtonsMap = new HashMap<>();
 
     public SelenideElement getSearchField() {
         return searchField;
