@@ -1,3 +1,5 @@
+package ui;
+
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 

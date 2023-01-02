@@ -1,5 +1,6 @@
-import org.junit.Assert;
-import org.junit.Test;
+package ui;
+
+import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.*;
 
@@ -18,7 +19,7 @@ public class SearchTest extends MainClass {
 
         SearchResultPage searchResultPage = searchPage.search(SEARCH_STRING);
 
-        Assert.assertTrue(searchResultPage.getFirstElemFromListing().getText().contains(SEARCH_STRING));
+        assert(searchResultPage.getFirstElemFromListing().getText().contains(SEARCH_STRING));
         searchResultPage.getFirstElemFromListing().click();
     }
 
