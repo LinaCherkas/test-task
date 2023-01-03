@@ -18,13 +18,14 @@ import static io.restassured.RestAssured.given;
 public class GorestTest extends MainClass {
     static UserData user;
 
-    public static String generateUserName(){
+    public static String generateUserName() {
         return UUID.randomUUID().toString().replace("-", "").substring(0, 10);
     }
 
-    public static String generateUserEmail(String name){
+    public static String generateUserEmail(String name) {
         return name + "@gmail.com";
     }
+
     @BeforeAll
     public static void Init() {
 
